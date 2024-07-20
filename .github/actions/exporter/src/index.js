@@ -77,7 +77,8 @@ async function main() {
     core.summary
       .addHeading("Result")
       .addRaw(`Permissions: ${sortedPermissions.length}`, true)
-      .addRaw(`Roles: ${output.roles.length}`, true)
+      .addEOL()
+      .addRaw(`Roles: ${rolesMap.size}`, true)
       .addSeparator()
       .write();
 
