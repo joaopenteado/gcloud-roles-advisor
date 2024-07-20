@@ -1,8 +1,13 @@
 name: Export GCP predefined roles and permissions
+
 on:
   workflow_dispatch:
   schedule:
     - cron: 0 0 * * *
+
+permissions:
+  contents: read
+  id-token: write
 
 jobs:
   export:
