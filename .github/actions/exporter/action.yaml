@@ -1,0 +1,9 @@
+name: Roles exporter
+description: Export GCP predefined roles and permissions to a JSON file
+inputs:
+  output_file:
+    description: File to write the output to
+    default: output.json
+runs:
+  using: node20
+  main: src/index.js

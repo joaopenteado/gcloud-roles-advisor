@@ -1,0 +1,16 @@
+{
+  "name": "exporter",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": {
+    "name": "João Penteado",
+    "url": "https://joaopenteado.com"
+  },
+  "license": "MIT",
+  "description": "GitHub action that exports a JSON file with GCP predefined roles.",
+  "type": "module",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "googleapis": "^140.0.1"
+  }
+}
