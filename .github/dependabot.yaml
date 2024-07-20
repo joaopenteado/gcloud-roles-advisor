@@ -1,0 +1,38 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    assignees:
+      - joaopenteado
+    reviewers:
+      - joaopenteado
+    groups:
+      patch:
+        update-types:
+          - patch
+      minor:
+        update-types:
+          - minor
+      major:
+        update-types:
+          - major
+  - package-ecosystem: npm
+    directory: /.github/actions/exporter
+    schedule:
+      interval: weekly
+    assignees:
+      - joaopenteado
+    reviewers:
+      - joaopenteado
+    groups:
+      patch:
+        update-types:
+          - patch
+      minor:
+        update-types:
+          - minor
+      major:
+        update-types:
+          - major
